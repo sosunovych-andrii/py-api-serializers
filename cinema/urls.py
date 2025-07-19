@@ -23,7 +23,8 @@ router.register(
 
 
 urlpatterns = [
-    path("", include(router.urls))
+    path("", include(router.urls)),
+    path("__debug__/", include("debug_toolbar.urls"))
 ]
 
 app_name = "cinema"
